@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=IntelliJ IDEA Ultimate
 GenericName=IntelliJ IDEA Ultimate
-Exec=idea
+Exec=/opt/intellij-idea-ultimate/bin/idea.sh
 Terminal=false
 Icon=idea
 Type=Application
