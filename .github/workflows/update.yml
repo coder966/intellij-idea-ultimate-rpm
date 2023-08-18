@@ -1,0 +1,20 @@
+name: Update
+
+on:
+  schedule:
+    - cron: '0 12 * * *'
+
+jobs:
+  update-languagetool:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: prepare git
+        run: |
+          git config --global user.email 'rpm-bot@coder966.net'
+          git config --global user.name 'RPM Bot'
+
+      - name: update
+        run: |
+          ./update.sh
