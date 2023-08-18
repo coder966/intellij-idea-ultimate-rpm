@@ -13,7 +13,7 @@ echo "Latest version: $latestVersion build: $latestBuildId"
 
 if [ "$currentBuildId" != "$latestBuildId" ]; then
 	DATE="$(date "+%a %b %d %Y")"
-	USER="coder966 <coder966@gmail.com>"
+	USER="RPM Bot <rpm-bot@coder966.net>"
 
 
 	sed -i "s/^Version: .*/Version:       ${latestVersion}/" intellij-idea-ultimate.spec
@@ -22,5 +22,5 @@ if [ "$currentBuildId" != "$latestBuildId" ]; then
 
 
 	git commit intellij-idea-ultimate.spec -m "Update to ${latestVersion}"
-	# git push
+	git push
 fi
