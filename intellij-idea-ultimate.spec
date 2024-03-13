@@ -1,5 +1,5 @@
 Name:          intellij-idea-ultimate
-Version:       2023.3.4
+Version:       2023.3.5
 Release:       1%{?dist}
 Summary:       IntelliJ IDEA Ultimate
 License:       Apache 2.0
@@ -20,7 +20,7 @@ AutoReqProv: no
 %global __jar_repack %{nil}
 
 
-%global build_id 233.14475.28
+%global build_id 233.14808.21
 
 
 %description
@@ -75,6 +75,9 @@ desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
 
 
 %changelog
+* Wed Mar 13 2024 RPM Bot <rpm-bot@coder966.net> - 2023.3.5
+- Update to 2023.3.5
+
 * Wed Feb 14 2024 RPM Bot <rpm-bot@coder966.net> - 2023.3.4
 - Update to 2023.3.4
 
