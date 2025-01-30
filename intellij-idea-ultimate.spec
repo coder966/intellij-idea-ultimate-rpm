@@ -1,5 +1,5 @@
 Name:          intellij-idea-ultimate
-Version:       2024.3.2.1
+Version:       2024.3.2.2
 Release:       1%{?dist}
 Summary:       IntelliJ IDEA Ultimate
 License:       Apache 2.0
@@ -20,7 +20,7 @@ AutoReqProv: no
 %global __jar_repack %{nil}
 
 
-%global build_id 243.23654.153
+%global build_id 243.23654.189
 
 
 %description
@@ -75,6 +75,9 @@ desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
 
 
 %changelog
+* Thu Jan 30 2025 RPM Bot <rpm-bot@coder966.net> - 2024.3.2.2
+- Update to 2024.3.2.2
+
 * Fri Jan 24 2025 RPM Bot <rpm-bot@coder966.net> - 2024.3.2.1
 - Update to 2024.3.2.1
 
