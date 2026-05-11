@@ -8,7 +8,7 @@ Packager:      Khalid Alharisi <coder966@gmail.com>
 
 
 Source0:       https://download.jetbrains.com/idea/ideaIU-%{version}.tar.gz
-Source1:       https://raw.githubusercontent.com/coder966/intellij-idea-ultimate-rpm/master/intellij-idea-ultimate.desktop
+Source1:       intellij-idea-ultimate.desktop
 
 
 BuildRequires: desktop-file-utils

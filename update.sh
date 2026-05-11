@@ -1,9 +1,14 @@
 #!/bin/sh
 
-currentVersion="$(cat intellij-idea-ultimate.spec | grep Version: | awk '{print $2}')"
-currentBuildId="$(cat intellij-idea-ultimate.spec | grep '%global build_id' | awk '{print $3}')"
+appDirNameArg="$1"
+apiUrlArg="$2"
 
-apiResponse="$(curl -s 'https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&type=release')"
+echo "Checking for updates for ${appDirNameArg} using API: ${apiUrlArg}"
+
+currentVersion="$(cat ${appDirNameArg}/rpm.spec | grep Version: | awk '{print $2}')"
+currentBuildId="$(cat ${appDirNameArg}/rpm.spec | grep '%global build_id' | awk '{print $3}')"
+
+apiResponse="$(curl -s "${apiUrlArg}")"
 latestVersion="$(printf "%s" "${apiResponse}" | jq -r '.IIU[0].version')"
 latestBuildId="$(printf "%s" "${apiResponse}" | jq -r '.IIU[0].build')"
 
@@ -16,11 +21,11 @@ if [ "$currentBuildId" != "$latestBuildId" ]; then
 	USER="RPM Bot <rpm-bot@coder966.net>"
 
 
-	sed -i "s/^Version: .*/Version:       ${latestVersion}/" intellij-idea-ultimate.spec
-	sed -i "s/^%global *build_id .*/%global build_id ${latestBuildId}/" intellij-idea-ultimate.spec
-	sed -i "s/^%changelog/%changelog\n\* ${DATE} ${USER} - ${latestVersion}\n- Update to ${latestVersion}\n/" intellij-idea-ultimate.spec
+	sed -i "s/^Version: .*/Version:       ${latestVersion}/" ${appDirNameArg}/rpm.spec
+	sed -i "s/^%global *build_id .*/%global build_id ${latestBuildId}/" ${appDirNameArg}/rpm.spec
+	sed -i "s/^%changelog/%changelog\n\* ${DATE} ${USER} - ${latestVersion}\n- Update to ${latestVersion}\n/" ${appDirNameArg}/rpm.spec
 
 
-	git commit intellij-idea-ultimate.spec -m "Update to ${latestVersion}"
+	git commit ${appDirNameArg}/rpm.spec -m "Update to ${latestVersion}"
 	git push
 fi

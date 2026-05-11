@@ -5,7 +5,7 @@ on:
     - cron: '0 12 * * *'
 
 jobs:
-  update-languagetool:
+  update-apps:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,6 +15,6 @@ jobs:
           git config --global user.email 'rpm-bot@coder966.net'
           git config --global user.name 'RPM Bot'
 
-      - name: update
+      - name: intellij-idea-ultimate
         run: |
-          ./update.sh
+          ./update.sh intellij-idea-ultimate https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&type=release
