@@ -17,4 +17,4 @@ jobs:
 
       - name: intellij-idea-ultimate
         run: |
-          ./update.sh intellij-idea-ultimate https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&type=release
+          ./update.sh "intellij-idea-ultimate" "https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&type=release"
