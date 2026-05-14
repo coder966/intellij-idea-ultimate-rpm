@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=VisualVM
+GenericName=VisualVM
+Exec=/opt/visualvm/bin/visualvm
+Icon=visualvm
+Terminal=false
+Type=Application
+Categories=Development;
+StartupWMClass=VisualVM

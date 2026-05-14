@@ -6,40 +6,32 @@ This is a collection of community-maintained unofficial RPMs built from official
 
 ## Postman
 
-#### Step 1: Enable the repo
 ```sh
 sudo dnf copr enable coder966/postman
-```
-
-#### Step 2: install it
-```sh
 sudo dnf install postman
 ```
 
 ## IntelliJ IDEA Ultimate
 
-#### Step 1: Enable the repo
 ```sh
 sudo dnf copr enable coder966/intellij-idea-ultimate
-```
-
-#### Step 2: install it
-```sh
 sudo dnf install intellij-idea-ultimate
 ```
-## SoapUI
 
-#### Step 0: JAVA
+## SoapUI
 Please make sure you have Java version 17 or higher.
 
-#### Step 1: Enable the repo
 ```sh
 sudo dnf copr enable coder966/soapui
+sudo dnf install soapui
 ```
 
-#### Step 2: install it
+## VisualVM
+Please make sure you have Java installed.
+
 ```sh
-sudo dnf install soapui
+sudo dnf copr enable coder966/visualvm
+sudo dnf install visualvm
 ```
 
 

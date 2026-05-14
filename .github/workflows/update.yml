@@ -27,3 +27,7 @@ jobs:
       - name: soapui
         run: |
           ./update.sh soapui
+
+      - name: visualvm
+        run: |
+          ./update.sh visualvm
