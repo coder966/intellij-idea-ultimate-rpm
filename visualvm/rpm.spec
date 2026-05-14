@@ -46,6 +46,7 @@ mkdir -p %{buildroot}/opt/%{name}
 cp -a * %{buildroot}/opt/%{name}
 
 install -pDm644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/%{name}.png
+install -pDm644 %{SOURCE2} %{buildroot}/opt/%{name}/icon.png
 
 desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
 

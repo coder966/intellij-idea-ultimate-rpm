@@ -2,7 +2,7 @@
 Name=VisualVM
 GenericName=VisualVM
 Exec=/opt/visualvm/bin/visualvm
-Icon=visualvm
+Icon=/opt/visualvm/icon.png
 Terminal=false
 Type=Application
 Categories=Development;
