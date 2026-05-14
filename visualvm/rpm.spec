@@ -48,15 +48,19 @@ cp -a * %{buildroot}/opt/%{name}
 install -pDm644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/%{name}.png
 install -pDm644 %{SOURCE2} %{buildroot}/opt/%{name}/icon.png
 
-desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
+cp %{SOURCE1} %{name}.desktop
+sed -i 's/@VERSION@/%{version}/g' %{name}.desktop
+desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{name}.desktop
 
 
 
 %files
 /opt/%{name}
 %{_datadir}/pixmaps/%{name}.png
-%{_datadir}/applications/visualvm.desktop
+%{_datadir}/applications/%{name}.desktop
 
 
 
 %changelog
+* Fri May 15 2026 RPM Bot <rpm-bot@coder966.net> - 2.2.1
+- Update to 2.2.1
