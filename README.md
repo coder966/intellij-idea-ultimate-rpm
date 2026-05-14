@@ -16,7 +16,7 @@ sudo dnf copr enable coder966/postman
 sudo dnf install postman
 ```
 
-## IntelliJ IDEA
+## IntelliJ IDEA Ultimate
 
 #### Step 1: Enable the repo
 ```sh
@@ -28,6 +28,9 @@ sudo dnf copr enable coder966/intellij-idea-ultimate
 sudo dnf install intellij-idea-ultimate
 ```
 ## SoapUI
+
+#### Step 0: JAVA
+Please make sure you have Java version 17 or higher.
 
 #### Step 1: Enable the repo
 ```sh
