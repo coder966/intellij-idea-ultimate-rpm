@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=SoapUI
+GenericName=SoapUI
+Exec=/opt/soapui/bin/soapui.sh
+Icon=/opt/soapui/icon.png
+Terminal=false
+Type=Application
+Categories=Development;
+StartupWMClass=com-eviware-soapui-SoapUI

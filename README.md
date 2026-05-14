@@ -27,4 +27,16 @@ sudo dnf copr enable coder966/intellij-idea-ultimate
 ```sh
 sudo dnf install intellij-idea-ultimate
 ```
+## SoapUI
+
+#### Step 1: Enable the repo
+```sh
+sudo dnf copr enable coder966/soapui
+```
+
+#### Step 2: install it
+```sh
+sudo dnf install soapui
+```
+
 

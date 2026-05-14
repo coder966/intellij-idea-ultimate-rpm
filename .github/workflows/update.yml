@@ -22,3 +22,7 @@ jobs:
       - name: intellij-idea-ultimate
         run: |
           ./update.sh intellij-idea-ultimate
+
+      - name: soapui
+        run: |
+          ./update.sh soapui
