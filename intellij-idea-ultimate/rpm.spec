@@ -20,8 +20,6 @@ AutoReqProv: no
 %global __jar_repack %{nil}
 
 
-%global build_id 261.23567.138
-
 
 %description
 IntelliJ IDEA Ultimate
@@ -32,8 +30,8 @@ IntelliJ IDEA Ultimate
 %prep
 
 
-# idea-IU-%{build_id} is the dir inside the tar
-%setup -q -n idea-IU-%{build_id}
+%setup -q -c -T
+tar -xf %{SOURCE0} --strip-components=1
 
 
 %build

@@ -14,7 +14,7 @@ jobs:
         run: |
           git config --global user.email 'rpm-bot@coder966.net'
           git config --global user.name 'RPM Bot'
-
+      
       - name: intellij-idea-ultimate
         run: |
-          ./update.sh "intellij-idea-ultimate" "https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&type=release"
+          ./update.sh intellij-idea-ultimate
