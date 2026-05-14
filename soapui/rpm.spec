@@ -1,5 +1,5 @@
 Name:          soapui
-Version:       5.7.1
+Version:       5.9.1
 Release:       2%{?dist}
 Summary:       SoapUI
 License:       Apache 2.0
@@ -63,6 +63,9 @@ desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
 
 
 %changelog
+* Thu May 14 2026 RPM Bot <rpm-bot@coder966.net> - 5.9.1
+- Update to 5.9.1
+
 
 * Tue Aug 18 2023 coder966 <coder966@gmail.com> - 5.7.1
 - Initial Release
