@@ -15,6 +15,10 @@ jobs:
           git config --global user.email 'rpm-bot@coder966.net'
           git config --global user.name 'RPM Bot'
       
+      - name: postman
+        run: |
+          ./update.sh postman
+
       - name: intellij-idea-ultimate
         run: |
           ./update.sh intellij-idea-ultimate

@@ -4,7 +4,19 @@ This is a collection of community-maintained unofficial RPMs built from official
 
 # Apps
 
-## intellij-idea-ultimate
+## Postman
+
+#### Step 1: Enable the repo
+```sh
+sudo dnf copr enable coder966/postman
+```
+
+#### Step 2: install it
+```sh
+sudo dnf install postman
+```
+
+## IntelliJ IDEA
 
 #### Step 1: Enable the repo
 ```sh
