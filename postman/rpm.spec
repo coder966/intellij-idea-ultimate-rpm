@@ -2,7 +2,7 @@ Name:          postman
 Version:       12.11.0
 Release:       1%{?dist}
 Summary:       Postman
-License:       Apache 2.0
+License:       Commercial
 URL:           https://www.postman.com/
 Packager:      Khalid Alharisi <coder966@gmail.com>
 

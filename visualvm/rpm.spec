@@ -2,7 +2,7 @@ Name:          visualvm
 Version:       2.2.1
 Release:       1%{?dist}
 Summary:       Visual VM
-License:       GPL-2.0-or-later
+License:       GPL-2.0
 URL:           https://visualvm.github.io/
 Packager:      Khalid Alharisi <coder966@gmail.com>
 

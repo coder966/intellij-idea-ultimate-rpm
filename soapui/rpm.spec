@@ -2,7 +2,7 @@ Name:          soapui
 Version:       5.9.1
 Release:       2%{?dist}
 Summary:       SoapUI
-License:       Apache 2.0
+License:       EUPL-1.1
 URL:           https://www.soapui.com/
 Packager:      Khalid Alharisi <coder966@gmail.com>
 

@@ -2,7 +2,7 @@ Name:          intellij-idea-ultimate
 Version:       2026.1.2
 Release:       1%{?dist}
 Summary:       IntelliJ IDEA Ultimate
-License:       Apache 2.0
+License:       Commercial
 URL:           https://www.jetbrains.com/idea/
 Packager:      Khalid Alharisi <coder966@gmail.com>
 
