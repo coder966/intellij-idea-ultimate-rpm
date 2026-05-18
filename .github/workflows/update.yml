@@ -31,3 +31,7 @@ jobs:
       - name: visualvm
         run: |
           ./update.sh visualvm
+
+      - name: keystore-explorer
+        run: |
+          ./update.sh keystore-explorer
