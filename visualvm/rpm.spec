@@ -23,8 +23,8 @@ AutoReqProv: no
 
 
 %description
-Visual VM
-
+VisualVM is a visual tool integrating commandline JDK tools and lightweight profiling capabilities.
+Designed for both development and production time use.
 
 
 

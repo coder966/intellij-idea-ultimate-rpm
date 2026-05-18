@@ -23,7 +23,8 @@ AutoReqProv: no
 
 
 %description
-SoapUI
+SoapUI is the world's most widely-used automated testing tool for SOAP and REST APIs.
+Write, run, integrate, and automate advanced API Tests with ease.
 
 
 

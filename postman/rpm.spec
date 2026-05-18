@@ -22,7 +22,8 @@ AutoReqProv: no
 
 
 %description
-Postman
+Postman is a comprehensive API (Application Programming Interface) platform that simplifies every step of the API lifecycle.
+It allows developers to design, mock, debug, test, document, and monitor APIs from a single environment.
 
 
 
