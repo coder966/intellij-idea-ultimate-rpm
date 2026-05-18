@@ -1,5 +1,5 @@
 Name:          intellij-idea-ultimate
-Version:       2026.1.1
+Version:       2026.1.2
 Release:       1%{?dist}
 Summary:       IntelliJ IDEA Ultimate
 License:       Apache 2.0
@@ -73,6 +73,9 @@ desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
 
 
 %changelog
+* Sat May 16 2026 RPM Bot <rpm-bot@coder966.net> - 2026.1.2
+- Update to 2026.1.2
+
 * Fri Apr 24 2026 RPM Bot <rpm-bot@coder966.net> - 2026.1.1
 - Update to 2026.1.1
 
