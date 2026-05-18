@@ -1,5 +1,5 @@
 Name:          postman
-Version:       12.10.6
+Version:       12.11.0
 Release:       1%{?dist}
 Summary:       Postman
 License:       Apache 2.0
@@ -61,6 +61,9 @@ desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
 
 
 %changelog
+* Mon May 18 2026 RPM Bot <rpm-bot@coder966.net> - 12.11.0
+- Update to 12.11.0
+
 * Fri May 15 2026 RPM Bot <rpm-bot@coder966.net> - 12.10.6
 - Update to 12.10.6
 
