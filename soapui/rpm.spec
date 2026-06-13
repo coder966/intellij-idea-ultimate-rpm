@@ -1,5 +1,5 @@
 Name:          soapui
-Version:       null
+Version:       5.10.0
 Release:       2%{?dist}
 Summary:       SoapUI
 License:       EUPL-1.1
@@ -64,6 +64,9 @@ desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
 
 
 %changelog
+* Sat Jun 13 2026 RPM Bot <rpm-bot@coder966.net> - 5.10.0
+- Update to 5.10.0
+
 * Fri Jun 12 2026 RPM Bot <rpm-bot@coder966.net> - null
 - Update to null
 
