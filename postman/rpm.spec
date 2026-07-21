@@ -1,5 +1,5 @@
 Name:          postman
-Version:       12.20.0
+Version:       12.20.1
 Release:       1%{?dist}
 Summary:       Postman
 License:       Commercial
@@ -62,6 +62,9 @@ desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
 
 
 %changelog
+* Tue Jul 21 2026 RPM Bot <rpm-bot@coder966.net> - 12.20.1
+- Update to 12.20.1
+
 * Mon Jul 20 2026 RPM Bot <rpm-bot@coder966.net> - 12.20.0
 - Update to 12.20.0
 
